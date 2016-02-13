@@ -1,421 +1,200 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="My survey site : ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-    <title>My survey site</title>
+    <title>My survey site by phaks323</title>
   </head>
 
   <body>
+    <header>
+      <div class="inner">
+        <h1>My survey site</h1>
+        <h2></h2>
+        <a href="https://github.com/phaks323/my_survey_site" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/phaks323/my_survey_site">View on GitHub</a>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <p>&lt;!doctype html&gt;
 
-          <h1 id="project_title">My survey site</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/phaks323/my_survey_site/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/phaks323/my_survey_site/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>&lt;!DOCTYPE html&gt;
 </p>
 
-<p></p>
-    HTML RESPOSIVE THEME
-    
+Example
+
+
+*{
+    margin:0px;
+    padding:0px;
+}
 body{
-    background-image: url("logo.jpg");
-    color: #000305;
-    font-size: 87.5%;
-    font-family: Arial, "Lucida Sans Unicode";
-    line-height: 1.5;
-    text-align: left;
+    background-image: url("bk.jpg");
+    background-repeat: repeat-xy;
+    height:100%;
+    width:100%;
+}
+#container{
+    align:center;
+    margin-top:50px;
+    margin-left:265px; 
+}
+.menu{
+    list-style:none;
+}
+.menu li{
+    display:block;
+    height:50px;
+    width:125px;
+    float:left;
+    background: background: #ffffff;
+    background: -moz-linear-gradient(top, #fffffff 0%, #f1f1f1 50%, e1e1e1 51%, #f6f6f6 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f1f1f1),color);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+    background: linear-gradient(to bottom,#ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 1000%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
+    line-height:50px;
+    text-align:center;
+    border-right:1px solid #000;
+    font-family: 'Francois One' sans-serif;
+}
+.child{
+    border-bottom-left-radius:50px;
+    border-top-left-radius:50px;
+}
+.child1{
+    border-bottom-right-radius:50px;
+    border-top-right-radius:50px;
+}
+.menu li:hover{
+    background:background: #ffffff;
+    backgrond: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #e5e5e5 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#f6f6f6));
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #e5e5e5 100%);
+    background: -o-radial-gradient(center, ellipse cover, #ffffff 0%, #e5e5e5 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%, #e5e5e5 100%);
+    backgroung: radial-gradient(ellipse at center, #ffffff 0%, #e5e5e5 100%);
+    filter: progid:DXImageTranform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#e5e5e5", GradientType=1);
+    color:rgba(15,126,47,1);
+}
+.sub{
+    visibility:hidden;
+}
+.menu li:hover .sub{
+    visibility:visible; 
+}
+.sub li{
+    border-top:1px solid rgba(0,0,0,1);
+    -o-transition:all .1s ease 0s;
+    -ms-transition:all .1s ease 0s;
+    -webkit-transition:all .1s ease 0s;
+    -moz-transition:all .1s ease 0s;
+    -o-transition:all .1s ease 0s;
+}
+.fold{
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.sub li:hover{
+    background:background: #f7fbfc;
+    backgrond: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #e5e5e5 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#f6f6f6));
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #e5e5e5 100%);
+    background: -o-radial-gradient(center, ellipse cover, #f7fbfc 0%, #d9edf2 40%, #add9e4 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%, #e5e5e5 100%);
+    backgroung: radial-gradient(ellipse at center, #ffffff 0%, #e5e5e5 100%);
+    filter: progid:DXImageTranform.Microsoft.gradient( startColorstr="#f7fbfc", endColorstr="#add9e4", GradientType=1);
+    width:145px;
+}
+.col{
+    font-family: georgia, serif;
+    margin-top:50px;
+    margin-left:460px;
+    color:white;
 }
 
-<p>a{
-    text-decoration: none;
-}</p>
 
-<p>a:link,  a:visited{
-    color: #cf5c3f;
-}</p>
-
-<p>a:hover, a:active{
-    background-color: #cf5c3f;
-    color: #fff;
-}
-.body{
-    margin: 0 auto;
-    width: 70%;
-    clear: both;
-}</p>
-
-<p>.mainheader img{
-    width: 30%;
-    height: auto;
-    margin: 2% 0;
-}</p>
-
-<p>.mainheader nav{
-    background-color: #666;
-    height: 40px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-}</p>
-
-<p>.mainheader nav ul{
-    list-style: none;
-    margin: 0 auto;
-}</p>
-
-<p>.mainheader nav ul li{
-    float: left;
-    display: inline;
-}</p>
-
-<p>.mainheader nav a:link, .mainheader  nav :visited{
-    color: #fff;
-    display: inline-block;
-    padding: 10px 25px;
-    height: 20px;
-}</p>
-
-<p>.mainheader nav a:hover, .mainheader nav a:active,
-.mainheader nav .active a:link, .mainheader nav .active a:visited{
-    background-color: #CF5C3F;
-    text-shadow: none;
-}</p>
-
-<p>.mainheader nav ul li a{
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-}</p>
-
-<p>.mainContent{
-    line-height: 25px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-}</p>
-
-<p>.content{
-    width: 70%;
-    float: left;
-}</p>
-
-<p>.topcontent{
-    background-color: #fff;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    padding: 3% 5%;
-    margin-top: 2%;
-}</p>
-
-<p>.bottomcontent{
-    background-color: #fff;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    padding: 3% 5%;
-    margin-top: 2%;
-}</p>
-
-<p>.top-sidebar{
-    width: 21%;
-    float: left;
-    background-color: #fff;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    padding: 2% 3%;
-    margin: 2% 0 2% 3%;
-}</p>
-
-<p>.post-info{
-    font-style: italics;
-    color: #999;
-    font-size: 90%;
-}</p>
-
-<p>.middle-sidebar{
-    width:21%;
-    float: left;
-    background-color: #fff;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    padding: 2% 3%;
-    margin: 2% 0 2% 3%;
-}</p>
-
-<p>.bottom-sidebar{
-    width:21%;
-    float: left;
-    background-color: #fff;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    margin: 2% 0 2% 3%;
-    padding: 2% 3%;
-}</p>
-
-<p>.mainfooter{
-    width: 100%;
-    float: left;
-    height: 40px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    background-color: #666;
-    margin: 2% 0;
-}</p>
-
-<p>.mainfooter p{
-    width: 92%;
-    margin: 10px auto;
-    color: #fff;
-}</p>
-
-<h1>
-<a id="slideshow" class="anchor" href="#slideshow" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>slideshow{</h1>
-
-<pre><code>    height: 40%;
-    width: 10%;
-}
-</code></pre>
-
-<h1>
-<a id="slideshow-img" class="anchor" href="#slideshow-img" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>slideshow img{</h1>
-
-<pre><code>    height: 100%;
-    width: 100%;
-}
-</code></pre>
-
-<h1>
-<a id="pager" class="anchor" href="#pager" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>pager{</h1>
-
-<pre><code>    text-align: center;
-    height: 100px;
-    width: 100%;
-    gposition: absolute;
-    bottom: 5%;
-    background: rgba(0, 0, 0, .5);
-    z-index: 1000;
-    opacity: 0;
-    transition:all 0.3s ease-in-out 0s;
-}
-</code></pre>
-
-<h1>
-<a id="pagerhover" class="anchor" href="#pagerhover" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>pager:hover{</h1>
-
-<pre><code>    opacity:1;
-}   
-</code></pre>
-
-<h1>
-<a id="pager-img" class="anchor" href="#pager-img" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>pager img{</h1>
-
-<pre><code>    margin:10px 5px;
-    opacity:0.3;
-    transition:all 0.3s ease-in-out 0s;
-}
-</code></pre>
-
-<h1>
-<a id="pager-imghover" class="anchor" href="#pager-imghover" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>pager img:hover{</h1>
-
-<pre><code>    opacity:1;
-    transform:scale(1.05);
-    z-index: 100;
-}
-</code></pre>
-
-<p><a href="https://github.com/media" class="user-mention">@media</a> only screen and (min-width: 150px) and (max-width: 600px)
-{
-.body{
-    width: 90%;
-    font-size: 95%
-}
-.mainheader img{
-    width: 100%;
-}</p>
-
-<p>.mainheader nav {
-    height: 160px;
-}</p>
-
-<p>.mainheader nav ul{
-    padding-left: 0;
-}</p>
-
-<p>.mainheader nav ul li{
-    width: 100%;
-    text-align: center;
-}</p>
-
-<p>.mainheader nav a:link, .mainheader  nav :visited{
-    padding: 10px 25px;
-    height: 20px;
-    display: block;
-}</p>
-
-<p>.mainheader nav ul li a{
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-}</p>
-
-<p>.content{
-    width: 100%;
-    margin-top: 2%;
-    float: left;
-}</p>
-
-<p>.post-info{
-    display: none;
-}
-.topcontent{
-    background-color: #fff;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    padding: 3% 5%;
-    margin-top: 2%;
-    margin-bottom: 4%;
-}</p>
-
-<p>.bottomcontent{
-    margin-top: 3%;
-}</p>
-
-<p>.top-sidebar, .middle-sidebar, .bottom-sidebar{
-    width:94%;
-    padding: 2% 3%;
-    margin: 2% 0 2% 0;
-}</p>
-
-<p>}
-    
-</p>
 
 <p></p>
-     
-        <img src="logo.png">
-         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul> 
-     
 
-<pre><code>&lt;div class="mainContent"&gt;
-    &lt;div class="content"&gt;
-        &lt;article class="topcontent"&gt;
-            &lt;header&gt;
-                &lt;h2&gt;&lt;a href="#" title="First Post"&gt;First Post&lt;/a&gt;&lt;/h2&gt;
-            &lt;/header&gt;
+<p></p>
 
-            &lt;footer&gt;
-                &lt;img src="logs.jpg" width="64" height="80" border="0"/&gt;
-                &lt;p class="post-info"&gt;This post is Written By Phaks323&lt;/p&gt;
-            &lt;/footer&gt;
-            &lt;content&gt;
-                &lt;p&gt; i think i was the only only one there tonight.
-                    why are you even speaking to him,fgdhjkng,dfghklmfg,f
-                    fghklfhl.fjlflk;yg,fl;ky  fklnhdlkfg,j.fklfg
-                    fjklmjftlk./fyg;ljklf.jfl;kmy
-                    jfl;l;mfl;lhgj.jfk;luk;lkg.gy';lu;'l;'ku';u.ugk;lku
-                &lt;/p&gt;
-                 &lt;p&gt; i think i was the only only one there tonight.
-                     why are you even speaking to him,fgdhjkng,dfghklmfg,f
-                     fghklfhl.fjlflk;yg,fl;ky  fklnhdlkfg,j.fklfg
-                     fjklmjftlk./fyg;ljklf.jfl;kmy
-                     jfl;l;mfl;lhgj.jfk;luk;lkg.gy';lu;'l;'ku';u.ugk;lku
-                &lt;/p&gt;
-            &lt;/content&gt;
-        &lt;/article&gt;
+<div>
+    <h1>
+<a id="technotut" class="anchor" href="#technotut" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TECHNO.TUT</h1>
+</div>
 
-        &lt;article class="bottomcontent"&gt;
-            &lt;header&gt;
-                &lt;h2&gt;&lt;a href="#" title="Second Post"&gt;Second Post&lt;/a&gt;&lt;/h2&gt;
-            &lt;/header&gt;
+<div id="container">
+<ul>
+<li>HOME&gt;
 
-            &lt;footer&gt;
-                &lt;p class="post-info"&gt;This post is Written By Phaks323&lt;/p&gt;
-            &lt;/footer&gt;
+</li>
+<li>SERVICES
+<ul>
+<li>sdf</li>
+<li>dsf</li>
+<li>dsfgsd</li>
+<li>gdfew</li>
+</ul>
+</li>
 
-            &lt;content&gt;
-                &lt;p&gt; i think i was the only only one there tonight.
-                     why are you even speaking to him,fgdhjkng,dfghklmfg,f
-                     fghklfhl.fjlflk;yg,fl;ky  fklnhdlkfg,j.fklfg
-                     fjklmjftlk./fyg;ljklf.jfl;kmy
-                     jfl;l;mfl;lhgj.jfk;luk;lkg.gy';lu;'l;'ku';u.ugk;lku&lt;/p&gt;
-                    ;u.ugk;lku
-                &lt;/p&gt;
-            &lt;/content&gt;
-        &lt;/article&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
+<li>PRODUCTS
+<ul>
+<li>sdf</li>
+<li>dsf</li>
+<li>dsfgsd</li>
+<li>gdfew</li>
+</ul>
+</li>
 
-&lt;aside class="top-sidebar"&gt;
-    &lt;article&gt;
-        &lt;h2&gt;Top sidebar&lt;/h2&gt;
-        &lt;p&gt;dery erhhe fiuhe dhoiuheirh dfiuhidjh mfdhi di diuhi, jidhojhf dfhuohvb fd&lt;/p&gt;
-    &lt;/article&gt;
-&lt;/aside&gt;
+<li>PORTFOLIO
+<ul>
+<li>sdf</li>
+<li>dsf</li>
+<li>dsfgsd</li>
+<li>gdfew</li>
+</ul>
+</li>
 
-&lt;aside class="middle-sidebar"&gt;
-    &lt;article&gt;
-        &lt;h2&gt;Middle sidebar&lt;/h2&gt;
-        &lt;p&gt;dery erhhe fiuhe dhoiuheirh dfiuhidjh mfdhi di diuhi, jidhojhf dfhuohvb fd&lt;/p&gt;
-    &lt;/article&gt;
-&lt;/aside&gt;
+<li>CONTACT</li>
 
-&lt;aside class="bottom-sidebar"&gt;
-    &lt;article&gt;
-        &lt;h2&gt;Bottom sidebar&lt;/h2&gt;
-        &lt;p&gt;dery erhhe fiuhe dhoiuheirh dfiuhidjh mfdhi di diuhi, jidhojhf dfhuohvb fd&lt;/p&gt;
-    &lt;/article&gt;
-&lt;/aside&gt;
-&lt;footer class="mainfooter"&gt;
-    &lt;p&gt;Copyright 2013 &amp;copy; &lt;a href="#"&gt;1stwebdesign.com&lt;/p&gt;
-&lt;/footer&gt;
-</code></pre>
+</ul>
+</div>
 
 <p>
 </p>
-      </section>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/phaks323/my_survey_site/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/phaks323/my_survey_site/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/phaks323/my_survey_site"></a> is maintained by <a href="https://github.com/phaks323">phaks323</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">My survey site maintained by <a href="https://github.com/phaks323">phaks323</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
+  
   </body>
 </html>
